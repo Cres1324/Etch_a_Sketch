@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Etch a Sketch!</title>
+        <link rel="Stylesheet" href="style.css">
+        <script src="javascript.js" defer></script>
+    </head>
+    <body>
+        <h1>Etch a Sketch!</h1>
+        <div class="active-area">
+            <div class="toolbox">
+                <div class="description">Choose your color</div>
+                <div class="color-pick-area">
+                    <div class="color-sliders">
+                        <div class="red-slider">RED:<input type="range"  min="0" max="255" class="slider"></div>
+                        <div class="green-slider">GREEN:<input type="range" min="0" max="255" class="slider"></div>
+                        <div class="blue-slider">BLUE:<input type="range" min="0" max="255" class="slider"></div> 
+                    </div>
+                    <div id="color-square">
+                        <div class="color-square-description">R: G: B: </div>
+                        <div class="color-square-square"></div>
+                    </div>                                          
+                </div>            
+                <div class="size">Slide to change size</div>
+                    <div class="size-slider"><input type="range" min="1" max="100" class="sizeSlider"></div>
+                    <div class="size-slider-description"></div>
+                    <button class="confirm-size">New grid</button>
+                <div class="buttons">
+                    <button class="clear-all">Clear sketch</button>
+                    <button class="eraser">Eraser</button>
+                </div>
+            </div>
+            <div class="sketch-area"> 
+                <div class="grid">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
